@@ -29,22 +29,9 @@ The power LED on the Intel® NUC blinks in a pattern if an error occurs during P
 Intel NUC products that include a front panel audio jack produce an audible beep pattern 
 that you can hear through headphones or speakers plugged into that jack.
 
-#### 3 blinks (3 beeps) ➡ Memory error
-
-On-off (1.0 second each) three times, then 2.5-second pause (off).
-The pattern repeats until the computer is powered off.
-
-#### Continual blinks ➡ BIOS Update in progress
-
-Off when the update starts, then on for 0.5 seconds, then off for 0.5 seconds.
-The pattern repeats until the BIOS update is complete.
-
-#### 2 blinks (2 beeps) ➡ Video error (when no VGA option ROM is found)
-
-On-off (1.0 second each) two times, then 2.5-second pause (off).
-The pattern repeats until the computer is powered off.
-
-#### 16 on/off blinks (8 beeps) ➡ CPU thermal trip warning
-
-0.25 seconds on, 0.25 seconds off, 0.25 seconds on, 0.25 seconds off, for a total of 16 blinks. 
-Then the computer shuts down.
+| Code | Diagnosis | Pattern |
+|------|-----------|---------|
+| 3 blinks (3 beeps) | Memory error | On-off (1.0 second each) three times, then 2.5-second pause (off). The pattern repeats until the computer is powered off. |
+| Continual blinks | BIOS Update in progress | Off when the update starts, then on for 0.5 seconds, then off for 0.5 seconds. The pattern repeats until the BIOS update is complete. |
+| 2 blinks (2 beeps) | Video error (when no VGA option ROM is found) | On-off (1.0 second each) two times, then 2.5-second pause (off). The pattern repeats until the computer is powered off. |
+| 16 on/off blinks (8 beeps) | CPU thermal trip warning | 0.25 seconds on, 0.25 seconds off, 0.25 seconds on, 0.25 seconds off, for a total of 16 blinks. Then the computer shuts down. |
