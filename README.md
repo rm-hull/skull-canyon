@@ -137,8 +137,12 @@ Mount it, and re-assign links:
 * i7-4700MQ: 38312.84 BogoMIPS
 
 #### I/O
-Running `hdparm -tT /dev/...`, buffered reads (cached reads):
-* Skull Canyon (Samsung M2): 2055.28 MB/sec (13037.37 MB/sec)
-* i7-4700MQ (SATA 6Gbps SSD): 241.69 MB/sec (11505.68 MB/sec)
-* HP Proliant Server (WD 7200RPM HDD): 11.10 MB/sec (1403.80 MB/sec)
-* Digital Ocean droplet (Virtual SSD): 270.41 MB/sec (6461.35 MB/sec)
+Running `hdparm -tT /dev/...`:
+
+| Device                | Drive           | Buffered Reads | Cached Reads    |
+|-----------------------|-----------------|----------------|-----------------|
+| Skull Canyon          | Samsung M2      | 2055.28 MB/sec | 13037.37 MB/sec |
+| i7-4700MQ             | SATA 6Gbps SSD  |  241.69 MB/sec | 11505.68 MB/sec |
+| HP Proliant Server    | WD 7200RPM HDD  |   11.10 MB/sec |  1403.80 MB/sec |
+| Digital Ocean droplet | Virtualized SSD |  270.41 MB/sec |  6461.35 MB/sec |
+
