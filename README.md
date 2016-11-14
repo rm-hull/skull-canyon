@@ -48,6 +48,10 @@ BIOS **KYSKLi70.86A.0042.2016.0929.1933** installed.
 On _Installation type_ screen, don't pick 'Encrypt the new Ubuntu installation
 for security': Use home folders encryption instead.
 
+### /etc/fstab
+Alter _/etc/fstab_ to set the root partition options to include **noatime**.
+Remount with `sudo mount -o remount /` (does not need a reboot).
+
 ### Resizing Partitions
 Swap was original set at 32Gb - not really a good use of expensive SSD, so this
 was reduced down to 4Gb, and then the space reclaimed into the root partition.
@@ -117,7 +121,7 @@ Next install some packages from other sources:
 Create a mount point with `sudo mkdir -p /mnt/atrax` and add the following
 entry to _/etc/fstab_:
 
-    192.168.1.65:/  /mnt/atrax    nfs4 _netdev,auto,intr,timeo=14,x-systemd.device-timeout=3s,nofail  0   0
+    192.168.1.65:/  /mnt/atrax    nfs4 _netdev,auto,intr,timeo=14,x-systemd.device-timeout=3s,nofail,noatime  0   0
 
 Mount it, and re-assign links:
 
