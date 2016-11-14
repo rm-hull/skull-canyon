@@ -109,11 +109,11 @@ Install some common packages from the Ubuntu mines:
     $ sudo apt-get install git htop tree nfs-client sshfs gimp openssh-server \
         exhuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
-        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi
+        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk
 
 Next install some packages from other sources:
 
-    $ sudo apt-get install vim-gnome virtualbox-5.1 oracle-java8-installer \
+    $ sudo apt-get install virtualbox-5.1 oracle-java8-installer \
         google-chrome-stable intellij-idea-community mongodb-org nodejs \
         sbt
 
