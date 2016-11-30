@@ -43,6 +43,7 @@ BIOS **KYSKLi70.86A.0042.2016.0929.1933** installed.
 ### References
 * http://unix.stackexchange.com/questions/198715/media-key-problems-with-microsoft-keyboard
 * http://unix.stackexchange.com/questions/227264/is-it-possible-to-tweak-input-from-touchpad
+* http://askubuntu.com/questions/363346/how-to-permanently-switch-caps-lock-and-esc
 
 ## Ubuntu Install
 On _Installation type_ screen, don't pick 'Encrypt the new Ubuntu installation
