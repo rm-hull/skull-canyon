@@ -82,6 +82,12 @@ Confirm with:
 * Use transparent background: _10%_
 * Limit scrollback: _Unlimited_
 
+### JDK Font Settings
+Add the following line to `/etc/environment` to enable better font rendering in applications
+such as IntelliJ:
+
+    JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+
 ### System Settings
 * Appearance > Behaviour Show the menus for a window: _In the window's title bar_
 
@@ -165,4 +171,4 @@ and limited to certain networks.
 ### References
 * http://unix.stackexchange.com/questions/139201/how-can-i-prevent-my-wifi-driver-from-going-catatonic
 * http://unix.stackexchange.com/questions/90687/recurrent-loss-of-wireless-connectivity/90689#90689
-
+* https://wiki.archlinux.org/index.php/Java_Runtime_Environment_fonts
