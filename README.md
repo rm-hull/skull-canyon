@@ -20,6 +20,12 @@ _Startup Disk Creator_ to burn to a USB drive.
 ## BIOS Settings
 BIOS & firmware updates available from: https://downloadcenter.intel.com/product/89187/Intel-NUC-Kit-NUC6i7KYK
 
+### Fast Boot
+Enabling fast boot means that there is no straightforward way to get to the BIOS settings, as the splash screen
+with F2 / F7 / etc options is skipped entirely. With the machine powered off, press and hold the power button 
+for 3-4 seconds then release. You should see a menu appear listing various options, one of which is BIOS Setup 
+(press F2).
+
 ### Blink Codes and Beep Codes
 The power LED on the Intel® NUC blinks in a pattern if an error occurs during POST.
 Intel NUC products that include a front panel audio jack produce an audible beep pattern
