@@ -122,7 +122,9 @@ Install some common packages from the Ubuntu mines:
     $ sudo apt-get install git htop tree nfs-client sshfs gimp openssh-server \
         exhuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
-        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk
+        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
+        ttf-mscorefonts-installer
+
 
 Next install some packages from other sources:
 
