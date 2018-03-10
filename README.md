@@ -1,5 +1,7 @@
 # Skull Canyon
-Notes on setting up Ubuntu 16.10 (Yakkety Yak) on Intel NUC6i7KYK
+[![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?maxAge=2592000)]()
+
+Notes on setting up Ubuntu 16.10 (Yakkety Yak) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
 
 ![skull-canyon](img/skull-canyon.jpg)
 
