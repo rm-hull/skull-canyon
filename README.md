@@ -121,8 +121,8 @@ Copy _~/.apt-lists/*_ into _/etc/apt/sources.list.d_ as root, and trust the keys
 ### APT Packages
 Install some common packages from the Ubuntu mines:
 
-    $ sudo apt-get install git htop tree nfs-client sshfs gimp openssh-server \
-        exhuberant-ctags silversearcher-ag postgresql postgresql-client \
+    $ sudo apt install git htop tree nfs-client sshfs gimp openssh-server \
+        exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
         ttf-mscorefonts-installer
@@ -130,7 +130,7 @@ Install some common packages from the Ubuntu mines:
 
 Next install some packages from other sources:
 
-    $ sudo apt-get install virtualbox-5.1 oracle-java8-installer \
+    $ sudo apt install virtualbox-5.1 oracle-java8-installer \
         google-chrome-stable intellij-idea-community mongodb-org nodejs \
         sbt
 
