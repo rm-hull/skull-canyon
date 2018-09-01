@@ -61,6 +61,15 @@ for security': Use home folders encryption instead.
 Alter _/etc/fstab_ to set the root partition options to include **noatime**.
 Remount with `sudo mount -o remount /` (does not need a reboot).
 
+### Inotify Watches Limit
+Add the following line to the `/etc/sysctl.conf` file:
+
+    fs.inotify.max_user_watches = 524288
+
+Then run this command to apply the change:
+
+    $ sudo sysctl -p --system
+
 ### Terminal Settings
 * Terminal size: _80 x 43_
 * Custom font: _Monospace Regular 10_
