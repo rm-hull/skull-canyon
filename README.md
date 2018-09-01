@@ -149,7 +149,7 @@ Running `hdparm -tT /dev/...`:
 
 | Device                | Drive              | Buffered Reads | Cached Reads    |
 |-----------------------|--------------------|---------------:|----------------:|
-| Skull Canyon          | Samsung 970 PRO M2 | 2239.87 MB/sec | 12689.42 MB/sec |
+| Skull Canyon          | Samsung 970 PRO M2 | 2478.33 MB/sec | 12689.42 MB/sec |
 | Skull Canyon          | Samsung 950 PRO M2 | 2055.28 MB/sec | 13037.37 MB/sec |
 | i7-4700MQ             | Kingson v300 SATA  |  308.45 MB/sec |  8916.75 MB/sec |
 | HP Proliant Server    | WD 7200RPM HDD     |   11.10 MB/sec |  1403.80 MB/sec |
