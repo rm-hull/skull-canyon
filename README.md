@@ -1,7 +1,7 @@
 # Skull Canyon
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?maxAge=2592000)]()
 
-Notes on setting up Ubuntu 16.10 (Yakkety Yak) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
+Notes on setting up Ubuntu 18.04 LTS (Bionic Beaver) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
 
 ![skull-canyon](img/skull-canyon.jpg)
 
@@ -15,8 +15,8 @@ Notes on setting up Ubuntu 16.10 (Yakkety Yak) on Intel NUC6i7KYK [tech-spec [PD
   DDR4 2400MHz PC4-19200 SODIMM 2Rx8 CL16 1.2v Notebook RAM.
 * [Microsoft All-in-One Media Keyboard](https://www.microsoft.com/accessories/en-gb/products/keyboards/all-in-one-media-keyboard/n9z-00006).
 
-## Download Ubuntu 16.10
-Dowfnload 64-bit desktop ISO image (1.5Gb) from http://releases.ubuntu.com/16.10/ and use
+## Download Ubuntu 18.04
+Dowfnload 64-bit desktop ISO image (1.5Gb) from http://old-releases.ubuntu.com/releases/bionic/ and use
 _Startup Disk Creator_ to burn to a USB drive.
 
 ## BIOS Settings
@@ -125,14 +125,13 @@ Install some common packages from the Ubuntu mines:
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
-        ttf-mscorefonts-installer
+        ttf-mscorefonts-installer httpie 
 
 
 Next install some packages from other sources:
 
-    $ sudo apt install virtualbox-5.1 oracle-java8-installer \
-        google-chrome-stable intellij-idea-community mongodb-org nodejs \
-        sbt
+    $ sudo apt install virtualbox-5.2 oracle-java8-installer \
+        google-chrome-stable nodejs sbt
 
 ### NFS Mount Point
 Create a mount point with `sudo mkdir -p /mnt/atrax` and add the following
@@ -160,12 +159,13 @@ Mount it, and re-assign links:
 #### I/O
 Running `hdparm -tT /dev/...`:
 
-| Device                | Drive             | Buffered Reads | Cached Reads    |
-|-----------------------|-------------------|---------------:|----------------:|
-| Skull Canyon          | Samsung M2        | 2055.28 MB/sec | 13037.37 MB/sec |
-| i7-4700MQ             | Kingson v300 SATA |  308.45 MB/sec |  8916.75 MB/sec |
-| HP Proliant Server    | WD 7200RPM HDD    |   11.10 MB/sec |  1403.80 MB/sec |
-| Digital Ocean droplet | Virtualized SSD   |  270.41 MB/sec |  6461.35 MB/sec |
+| Device                | Drive              | Buffered Reads | Cached Reads    |
+|-----------------------|--------------------|---------------:|----------------:|
+| Skull Canyon          | Samsung 970 PRO M2 | 2239.87 MB/sec | 12689.42 MB/sec |
+| Skull Canyon          | Samsung 950 PRO M2 | 2055.28 MB/sec | 13037.37 MB/sec |
+| i7-4700MQ             | Kingson v300 SATA  |  308.45 MB/sec |  8916.75 MB/sec |
+| HP Proliant Server    | WD 7200RPM HDD     |   11.10 MB/sec |  1403.80 MB/sec |
+| Digital Ocean droplet | Virtualized SSD    |  270.41 MB/sec |  6461.35 MB/sec |
 
 ## Troubleshooting
 
