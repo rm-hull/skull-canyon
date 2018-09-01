@@ -61,43 +61,12 @@ for security': Use home folders encryption instead.
 Alter _/etc/fstab_ to set the root partition options to include **noatime**.
 Remount with `sudo mount -o remount /` (does not need a reboot).
 
-### Resizing Partitions
-Swap was original set at 32Gb - not really a good use of expensive SSD, so this
-was reduced down to 4Gb, and then the space reclaimed into the root partition.
-
-* http://askubuntu.com/questions/226520/how-to-modify-size-of-swap-with-a-lvm-partition
-* http://www.geoffstratton.com/expand-hard-disk-ubuntu-lvm
-
-Confirm with:
-
-    $ df -h
-    Filesystem                   Size  Used Avail Use% Mounted on
-    udev                          16G     0   16G   0% /dev
-    tmpfs                        3.2G  9.9M  3.2G   1% /run
-    /dev/mapper/ubuntu--vg-root  229G  4.7G  213G   3% /
-    tmpfs                         16G  152K   16G   1% /dev/shm
-    tmpfs                        5.0M  4.0K  5.0M   1% /run/lock
-    tmpfs                         16G     0   16G   0% /sys/fs/cgroup
-    /dev/nvme0n1p2               473M  124M  325M  28% /boot
-    /dev/nvme0n1p1               511M  3.6M  508M   1% /boot/efi
-    tmpfs                        3.2G  100K  3.2G   1% /run/user/1000
-    /home/rhu/.Private           229G  4.7G  213G   3% /home/rhu
-
 ### Terminal Settings
 * Terminal size: _80 x 43_
-* Custom font: _Monospace Regular 9_
+* Custom font: _Monospace Regular 10_
 * Colors: _Grey on black_
 * Use transparent background: _10%_
 * Limit scrollback: _Unlimited_
-
-### JDK Font Settings
-Add the following line to `/etc/environment` to enable better font rendering in applications
-such as IntelliJ:
-
-    JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
-
-### System Settings
-* Appearance > Behaviour Show the menus for a window: _In the window's title bar_
 
 ### SSH Key generation
 Generate an RSA public/private keypair with `ssh-keygen`. Upload the public key
@@ -125,13 +94,12 @@ Install some common packages from the Ubuntu mines:
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
-        ttf-mscorefonts-installer httpie 
-
+        ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip
 
 Next install some packages from other sources:
 
     $ sudo apt install virtualbox-5.2 oracle-java8-installer \
-        google-chrome-stable nodejs sbt
+        oracle0java10-installer google-chrome-stable nodejs sbt
 
 ### NFS Mount Point
 Create a mount point with `sudo mkdir -p /mnt/atrax` and add the following
