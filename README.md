@@ -9,8 +9,8 @@ Notes on setting up Ubuntu 18.04 LTS (Bionic Beaver) on Intel NUC6i7KYK [tech-sp
 * [Intel NUC6i7KYK](http://www.intel.co.uk/content/www/uk/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html) -
   6th generation Intel® Core™ i7-6770HQ processor with Intel® Iris™ Pro graphics (2.6 to 3.5 GHz Turbo, Quad Core,
   6 MB Cache, 45W TDP).
-* [950 PRO NVMe M.2 SSD](http://www.samsung.com/uk/consumer/memory-storage/ssd/950-pro/MZ-V5P256BW) - 256Gb,
-  NVMe SSD powered by Samsung V-NAND technology. Up to 2,200MB/s sequential read and 900MB/s write.
+* [970 EVO NVMe M.2 SSD](https://www.samsung.com/uk/memory-storage/970-evo-nvme-m2-ssd/MZ-V7E250BW/) - 250Gb,
+  NVMe SSD powered by Samsung V-NAND technology. Up to 3,500MB/s sequential read and 2,500MB/s write.
 * [Komputerbay 32GB ( 2x 16GB) SODIMM](https://www.amazon.co.uk/gp/product/B01H44ARFM) -  Laptop Memory Upgrade
   DDR4 2400MHz PC4-19200 SODIMM 2Rx8 CL16 1.2v Notebook RAM.
 * [Microsoft All-in-One Media Keyboard](https://www.microsoft.com/accessories/en-gb/products/keyboards/all-in-one-media-keyboard/n9z-00006).
@@ -104,7 +104,7 @@ Install some common packages from the Ubuntu mines:
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
         ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip \
-        curl
+        curl net-tools
 
 Next install some packages from other sources:
 
