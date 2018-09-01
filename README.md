@@ -103,12 +103,21 @@ Install some common packages from the Ubuntu mines:
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
-        ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip
+        ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip \
+        curl
 
 Next install some packages from other sources:
 
     $ sudo apt install virtualbox-5.2 oracle-java8-installer \
-        oracle0java10-installer google-chrome-stable nodejs sbt
+        oracle0java10-installer google-chrome-stable nodejs sbt \
+        docker-ce
+
+#### Post install steps
+
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker $USER
+    
+Log out and in again to pick up the new group
 
 ### NFS Mount Point
 Create a mount point with `sudo mkdir -p /mnt/atrax` and add the following
