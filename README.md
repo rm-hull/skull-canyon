@@ -96,6 +96,8 @@ Copy _~/.apt-lists/*_ into _/etc/apt/sources.list.d_ as root, and trust the keys
     $ sudo cp -av ~/.apt-lists/*.list /etc/apt/sources.list.d
     $ sudo apt-key add ~/.apt-lists/TRUSTED-KEYS.txt
 
+(trusted keys generated with `apt-key exportall`)
+
 ### APT Packages
 Install some common packages from the Ubuntu mines:
 
