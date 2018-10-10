@@ -112,7 +112,7 @@ Next install some packages from other sources:
 
     $ sudo apt install virtualbox-5.2 oracle-java8-installer \
         oracle-java11-installer google-chrome-stable nodejs sbt \
-        docker-ce etcher-electron
+        docker-ce etcher-electron code
 
 #### Post install steps
 
@@ -153,17 +153,6 @@ Running `hdparm -tT /dev/...`:
 | i7-4700MQ             | Kingson v300 SATA  |  308.45 MB/sec |  8916.75 MB/sec |
 | HP Proliant Server    | WD 7200RPM HDD     |   11.10 MB/sec |  1403.80 MB/sec |
 | Digital Ocean droplet | Virtualized SSD    |  270.41 MB/sec |  6461.35 MB/sec |
-
-## Troubleshooting
-
-To stop repeated `[ 9351.591170] iwlwifi 0000:03:00.0: Queue 11 stuck for 2000
-ms.` messages and catatonic WiFi performance, edit edit
-_/etc/modprobe.d/iwlwifi.conf_ and add:
-
-    options iwlwifi 11n_disable=1
-
-This disables Wireless-N networking. The fault appear to be firmware related
-and limited to certain networks.
 
 ### References
 * http://unix.stackexchange.com/questions/139201/how-can-i-prevent-my-wifi-driver-from-going-catatonic
