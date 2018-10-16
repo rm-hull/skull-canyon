@@ -106,7 +106,7 @@ Install some common packages from the Ubuntu mines:
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
         ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip \
-        curl net-tools wireshark-qt
+        curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module
 
 Next install some packages from other sources:
 
