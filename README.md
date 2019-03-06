@@ -40,7 +40,7 @@ that you can hear through headphones or speakers plugged into that jack.
 | 2 blinks (2 beeps) | Video error (when no VGA option ROM is found) | On-off (1.0 second each) two times, then 2.5-second pause (off). The pattern repeats until the computer is powered off. |
 | 16 on/off blinks (8 beeps) | CPU thermal trip warning | 0.25 seconds on, 0.25 seconds off, 0.25 seconds on, 0.25 seconds off, for a total of 16 blinks. Then the computer shuts down. |
 
-BIOS **KYSKLi70.86A.0046.2017.0407.1426** installed.
+BIOS **KYSKLi70.86A.0060.2019.0122.1440** installed.
 
 ### References
 * http://www.virtuallyghetto.com/2016/05/heads-up-esxi-not-working-on-the-new-intel-nuc-skull-canyon.html
@@ -119,7 +119,7 @@ Next install some packages from other sources:
 
     $ sudo groupadd docker
     $ sudo usermod -aG docker $USER
-    
+
 Log out and in again to pick up the new group
 
 ### NFS Mount Point
