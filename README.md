@@ -142,8 +142,13 @@ Mount it, and re-assign links:
 ### Benchmarking
 
 #### CPU
-* Skull Canyon: 41472.00 BogoMIPS
-* i7-4700MQ: 38312.84 BogoMIPS
+
+| Device                       | BogoMIPS  |
+| :---                         |      ---: |
+| Skull Canyon                 | 41472.00  |
+| i7-4700MQ                    | 38312.84  |
+| AMD Ryzen Threadripper 1950X | 217164.73 |
+| AMD Turion II Neo N40L       | 5990.21   |
 
 #### I/O
 Running `hdparm -tT /dev/...`:
