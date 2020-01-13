@@ -108,7 +108,8 @@ Install some common packages from the Ubuntu mines:
         ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip \
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
-        nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic
+        nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
+        rlwrap
 
 Next install some packages from other sources:
 
