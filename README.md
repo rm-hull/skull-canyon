@@ -109,7 +109,7 @@ Install some common packages from the Ubuntu mines:
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
-        rlwrap
+        rlwrap iperf
 
 Next install some packages from other sources:
 
