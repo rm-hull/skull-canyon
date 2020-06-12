@@ -109,7 +109,9 @@ Install some common packages from the Ubuntu mines:
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
-        rlwrap iperf libreadline-dev sqlite3 libsqlite3-dev
+        rlwrap iperf libreadline-dev sqlite3 libsqlite3-dev build-essential \
+        libssl-dev zlib1g-dev libbz2-dev llvm libncurses5-dev libncursesw5-dev \
+        xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 
 Next install some packages from other sources:
 
