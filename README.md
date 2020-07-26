@@ -111,7 +111,10 @@ Install some common packages from the Ubuntu mines:
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
         rlwrap iperf libreadline-dev sqlite3 libsqlite3-dev build-essential \
         libssl-dev zlib1g-dev libbz2-dev llvm libncurses5-dev libncursesw5-dev \
-        xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+        xz-utils tk-dev libffi-dev liblzma-dev python-openssl python3-dev \
+        libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev \
+        libsmpeg-dev python-numpy libportmidi-dev ffmpeg libswscale-dev \
+        libavformat-dev libavcodec-dev
 
 Next install some packages from other sources:
 
