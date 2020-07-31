@@ -118,7 +118,7 @@ Install some common packages from the Ubuntu mines:
 
 Next install some packages from other sources:
 
-    $ sudo apt install virtualbox-6.0 oracle-java12-installer \
+    $ sudo apt install virtualbox-6.1 oracle-java12-installer \
         oracle-java12-set-default google-chrome-stable nodejs sbt \
         docker-ce etcher-electron code
 
