@@ -114,7 +114,9 @@ Install some common packages from the Ubuntu mines:
         xz-utils tk-dev libffi-dev liblzma-dev python-openssl python3-dev \
         libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev \
         libsmpeg-dev python-numpy libportmidi-dev ffmpeg libswscale-dev \
-        libavformat-dev libavcodec-dev
+        libavformat-dev libavcodec-dev python3-pil libjpeg-dev zlib1g-dev \
+        libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5
+        
 
 Next install some packages from other sources:
 
