@@ -1,5 +1,5 @@
 # Skull Canyon
-[![Maintenance](https://img.shields.io/maintenance/yes/2020.svg?maxAge=2592000)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2023.svg?maxAge=2592000)]()
 
 Notes on setting up Ubuntu 18.04 LTS (Bionic Beaver) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
 
