@@ -105,15 +105,15 @@ Install some common packages from the Ubuntu mines:
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
-        ttf-mscorefonts-installer httpie jq awscli python-pip python3-pip \
+        ttf-mscorefonts-installer httpie jq awscli \
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
         rlwrap iperf libreadline-dev sqlite3 libsqlite3-dev build-essential \
         libssl-dev zlib1g-dev libbz2-dev llvm libncurses5-dev libncursesw5-dev \
-        xz-utils tk-dev libffi-dev liblzma-dev python-openssl python3-dev \
+        xz-utils tk-dev libffi-dev liblzma-dev python3-dev \
         libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev \
-        libsmpeg-dev python-numpy libportmidi-dev ffmpeg libswscale-dev \
+        libsmpeg-dev libportmidi-dev libswscale-dev \
         libavformat-dev libavcodec-dev python3-pil libjpeg-dev zlib1g-dev \
         libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5
         
