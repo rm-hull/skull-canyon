@@ -154,10 +154,12 @@ Mount it, and re-assign links:
 
 | Device                       | BogoMIPS  |
 | :---                         |      ---: |
-| Skull Canyon                 | 41472.00  |
-| i7-4700MQ                    | 38312.84  |
 | AMD Ryzen Threadripper 1950X | 217164.73 |
-| AMD Turion II Neo N40L       | 5990.21   |
+| Skull Canyon (i7-6770HQ)     |  41472.00 |
+| i7-4700MQ                    |  38312.84 |
+| i5-6500T                     |  19999.61 |
+| Intel Atom D525              |  14364.22 |
+| AMD Turion II Neo N40L       |   5990.21 |
 
 #### I/O
 Running `hdparm -tT /dev/...`:
@@ -168,6 +170,8 @@ Running `hdparm -tT /dev/...`:
 | i7-4700MQ             | Kingson v300 SATA  |  308.45 MB/sec |  8916.75 MB/sec |
 | HP Proliant Server    | WD 7200RPM HDD     |   11.10 MB/sec |  1403.80 MB/sec |
 | Digital Ocean droplet | Virtualized SSD    |  270.41 MB/sec |  6461.35 MB/sec |
+| Acer Aspire           |                    |  215.71 MB/sec |   912.51 MB/sec |
+| i5-6500T              | Samsung SSD        |  488.86 MB/sec | 13708.87 MB/sec |  
 
 ### References
 * http://unix.stackexchange.com/questions/139201/how-can-i-prevent-my-wifi-driver-from-going-catatonic
