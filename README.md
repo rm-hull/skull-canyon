@@ -105,7 +105,7 @@ Install some common packages from the Ubuntu mines:
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
         optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk3 \
-        ttf-mscorefonts-installer httpie jq awscli \
+        ttf-mscorefonts-installer httpie jq awscli exa \
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
