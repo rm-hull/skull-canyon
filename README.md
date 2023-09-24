@@ -1,7 +1,7 @@
 # Skull Canyon
 [![Maintenance](https://img.shields.io/maintenance/yes/2023.svg?maxAge=2592000)]()
 
-Notes on setting up Ubuntu 18.04 LTS (Bionic Beaver) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
+Notes on setting up Ubuntu 23.04 (Lunar Lobster) on Intel NUC6i7KYK [tech-spec [PDF]](https://github.com/rm-hull/skull-canyon/raw/master/docs/NUC6i7KYK_TechProdSpec.pdf)
 
 ![skull-canyon](img/skull-canyon.jpg)
 
@@ -15,8 +15,8 @@ Notes on setting up Ubuntu 18.04 LTS (Bionic Beaver) on Intel NUC6i7KYK [tech-sp
   DDR4 2400MHz PC4-19200 SODIMM 2Rx8 CL16 1.2v Notebook RAM.
 * [Microsoft All-in-One Media Keyboard](https://www.microsoft.com/accessories/en-gb/products/keyboards/all-in-one-media-keyboard/n9z-00006).
 
-## Download Ubuntu 18.04
-Dowfnload 64-bit desktop ISO image (1.5Gb) from http://old-releases.ubuntu.com/releases/bionic/ and use
+## Download Ubuntu 23.04
+Dowfnload 64-bit desktop ISO image (4.6Gb) from https://releases.ubuntu.com/releases/lunar/ and use
 _Startup Disk Creator_ to burn to a USB drive.
 
 ## BIOS Settings
@@ -101,22 +101,21 @@ Copy _~/.apt-lists/*_ into _/etc/apt/sources.list.d_ as root, and trust the keys
 ### APT Packages
 Install some common packages from the Ubuntu mines:
 
-    $ sudo apt install git htop tree nfs-client sshfs gimp openssh-server \
+    $ sudo apt install git htop tree nfs-common sshfs gimp openssh-server \
         exuberant-ctags silversearcher-ag postgresql postgresql-client \
         openvpn network-manager-openvpn network-manager-openvpn-gnome \
-        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk \
+        optipng p7zip unrar mplayer ffmpeg gitg conky-all acpi vim-gtk3 \
         ttf-mscorefonts-installer httpie jq awscli \
         curl net-tools wireshark-qt libcanberra-gtk-module libcanberra-gtk3-module \
         slurm moreutils ncdu inxi graphviz gnome-tweaks sbcl ngrep speedtest-cli \
         nethogs linux-tools-common linux-tools-generic linux-cloud-tools-generic \
         rlwrap iperf libreadline-dev sqlite3 libsqlite3-dev build-essential \
         libssl-dev zlib1g-dev libbz2-dev llvm libncurses5-dev libncursesw5-dev \
-        xz-utils tk-dev libffi-dev liblzma-dev python3-dev \
+        xz-utils tk-dev libffi-dev liblzma-dev python3-dev fonts-jetbrains-mono \
         libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev \
         libsmpeg-dev libportmidi-dev libswscale-dev \
         libavformat-dev libavcodec-dev python3-pil libjpeg-dev zlib1g-dev \
-        libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5
-        
+        libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff6
 
 Next install some packages from other sources:
 
